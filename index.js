@@ -1,4 +1,10 @@
 #!/usr/bin/env node
 // @ts-check
 
-console.log('hello world')
+const note = process.argv[2]
+const newNote = {
+  id: Date.now(),
+  content: note,
+}
+
+console.log(newNote)
